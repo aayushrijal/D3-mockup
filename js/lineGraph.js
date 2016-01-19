@@ -13,10 +13,11 @@ var colors = d3.scale.category10();
 					top: 20, right:20, bottom:20, left: 50
 				};
 
-	var xScaleLineGraph = d3.scale.ordinal().rangeRoundBands([0,widthOfLineGraph - 50], 0);
+	var xScaleLineGraph = d3.scale.ordinal().rangeRoundBands([0,widthOfLineGraph - 60], 0);
 
 	var yScaleLineGraph = d3.scale.linear()
 				.range([heightOfLineGraph - margin.top, margin.bottom]);
+				// .range([heightOfLineGraph]);
 
 	var xAxisLineGraph = d3.svg.axis()
 					.orient("bottom")
@@ -35,7 +36,7 @@ var colors = d3.scale.category10();
 		});
 
 		xScaleLineGraph.domain(data.map(function (d) { return d.year; }));
-		yScaleLineGraph.domain([1,4]);
+		yScaleLineGraph.domain([0,d3.max(data, function (d){ return d.sale})]);
 
 		visLineGraph.append("svg:g")
 			.attr("class","axis")
