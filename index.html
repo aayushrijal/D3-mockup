@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Integrated Project</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="../vendor/d3.min.js"></script>
+	</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HMIS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Map</a></li>
+            <li><a href="compare.html">Compare</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Indicators <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Maternal Mortality</a></li>
+                <li><a href="#">ANC Visits Upto 4</a></li>
+                <li><a href="#">Presence of SBA at birth</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">More</li>
+                <li><a href="#">Iron Compliance</a></li>
+                <li><a href="#">Women who had 3 P.N.</a></li>
+                <li><a href="#">Pregnent Women Receiving</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Year <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">068/069</a></li>
+                <li><a href="#">069/070</a></li>
+                <li><a href="#">070/071</a></li>
+                <li><a href="#">071/072</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<div class="container">
+    <div class="row map">
+      <div class="col-md-11">
+        <div id="map"></div>
+      </div>
+      <div class="col-md-1">
+          <div id="mapLegend"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+		<div class="row">
+			<div class="col-md-6 side">
+        <div class="chartTitle">Comparision of Maternal Mortality</div>
+				<div id="lineGraph">
+				</div>
+			</div>
+      <div class="col-md-6 side">
+        <div class="chartTitle">Status of Maternal Mortality in Development Region</div>
+        <div id= "horizontalBarChart" class="panel"></div>
+      </div>
+		</div>
+	</div>
+   <!-- <div id="vis">
+        </div>
+        <p><input id="generate" value="Randomise data" type="button"> -->
+
+<script src="js/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/lineGraph.js"></script>
+<script type="text/javascript" src="js/horizontalBar.js"></script>
+<script src="js/pyramid.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+	{ 
+		"region" : "Eastern",
+		"values" : 113,
+		"targets" : 120
+	},
+	{ 
+		"region" : "Central",
+		"values" : 209,
+		"targets" : 120
+	},
+	{ 
+		"region" : "Western",
+		"values" : 190,
+		"targets" : 120
+	},
+	{ 
+		"region" : "Mid-Western",
+		"values" : 179,
+		"targets" : 120
+	},
+	{ 
+		"region" : "Far-Western",
+		"values" : 156,
+		"targets" : 120
+	}
+]

@@ -1,0 +1,122 @@
+.map{
+	width: auto;
+	height: 550px;
+    /*padding-top: 35px;*/
+	border: 1px solid orange;
+}
+.side{
+border: 1px solid orange;	
+}
+.easyMap{
+	width: 1150px;
+	height: 650px;
+}
+@media screen and (max-width: 768px){
+	.easyMap{
+		height: 400px;
+		width: 397px;
+	}	
+}
+.lineGraph{
+  width: 500px;
+  height: 372px;
+}
+.popUp{
+	background-color: white;
+    margin: 5px;
+    overflow: auto;
+    width: 35%;
+    left: 5%;
+    top: 15%;
+    border-radius: 15px;
+    position: absolute;
+    -webkit-box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 10px 10px 47px 0px rgba(0, 0, 0, 0.29);
+}
+#popUpClose {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 10px;
+}
+
+#popUpWrapper{
+	position: relative;
+    padding: 30px;
+    overflow: auto;
+}
+#popUpTitle{
+	display:inline;
+}
+#popUpContent{
+	text-align: left;
+}
+.toolTipTitle{
+	font-size: 18px;
+}
+.toolTipColumn{
+	font-size: 14px;
+}
+.tooltip {
+    background-color: lightgrey;
+    position: absolute;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+}
+
+/*line graph*/
+
+.axis path {
+	    fill: none;
+	    stroke: #777;
+	    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Lato;
+    font-size: 12px;
+}
+
+
+.line {
+	stroke: #993300;
+	fill: none;
+	stroke-width: 0.75px;
+  shape-rendering: crispEdges;
+}
+.line.line5 {
+	stroke:red; 
+}
+
+/*pyramidChart*/
+
+.shared, .bar, .label {
+  font-size: 8pt;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+/*.femalebar, .malebar {
+  fill: teal;
+}*/
+.highlight rect.malebar, .highlight rect.femalebar {
+  fill: red;
+}
+text.malebar, text.femalebar {
+  display: none;
+}
+.highlight text {
+  display: block;
+  fill: #000;
+}
+.chartTitle{
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px;
+}

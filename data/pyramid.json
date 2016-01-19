@@ -1,0 +1,26 @@
+[
+  {
+  	"sharedLabel": "EDR",
+  	"barData1": 43041,
+  	"barData2": 40852
+  },
+  {
+  	"sharedLabel": "CDR",
+  	"barData1": 38867,
+  	"barData2": 36296
+  },
+  {
+  	"sharedLabel": "WDR",
+  	"barData1": 41748,
+  	"barData2": 40757
+  },
+  {
+  	"sharedLabel": "M-WDR",
+  	"barData1": 24831,"barData2": 23624
+  },
+  {
+  	"sharedLabel": "F-WDR",
+  	"barData1": 15764,
+  	"barData2": 15299
+  }
+]
